@@ -1,0 +1,58 @@
+Liquid Glass Document Workspace
+Copyright (c) 2026 Lonskiy Yegor
+
+ENGLISH
+I retain copyright in my original application code, design and documentation.
+Subject to the terms in index.html (LEGAL.html in the extension),
+I grant non-exclusive, royalty-free permission to install and run the supplied
+application on your devices solely for lawful, non-commercial document processing.
+The restrictions, warranty disclaimers, liability provisions and user obligations
+in that document are conditions of this permission, not optional recommendations.
+If you do not accept them, do not install or use the application; if installed,
+stop using it and uninstall it.
+
+Commercial or business use, paid professional work, client services, paid
+commissions, production or sale of goods or services, and other activities directed
+toward commercial advantage or monetary compensation are not authorized.
+This restriction applies equally to individuals, sole traders and companies.
+Donations are entirely optional, do not authorize commercial use, and do not create
+commitments to provide support, warranties or future development.
+The application is provided AS IS and AS AVAILABLE, subject to the full terms.
+Free availability does not transfer copyright or grant a general right to
+redistribute or relicense my original code or materials.
+
+These provisions apply only to my own original code and materials. They do not
+replace third-party licenses or restrict rights granted by their rightsholders.
+Third-party notices and license texts are included in THIRD-PARTY-NOTICES.txt.
+Mandatory rights, remedies and liability that cannot lawfully be excluded or
+limited remain unaffected and take precedence over conflicting terms.
+
+РУССКИЙ
+Я сохраняю авторские права на созданные мной код, оформление и документацию.
+На условиях index.html (LEGAL.html в расширении) я предоставляю
+неисключительное безвозмездное разрешение устанавливать и запускать предоставленное
+приложение на своих устройствах исключительно для законной некоммерческой
+обработки документов. Ограничения, отказы от гарантий, положения об ответственности
+и обязательства пользователя из этого документа являются условиями разрешения,
+а не необязательными рекомендациями. Если вы их не принимаете, не устанавливайте
+и не используйте приложение; если оно установлено, прекратите использование
+и удалите его.
+
+Я не разрешаю использование в коммерческой или предпринимательской деятельности,
+оплачиваемой профессиональной работе, обслуживании клиентов, выполнении платных
+заказов, производстве или продаже товаров и услуг либо иной деятельности,
+направленной на получение коммерческой выгоды или денежного вознаграждения.
+Ограничение одинаково относится к физическим лицам, предпринимателям и компаниям.
+Донаты полностью добровольны, не разрешают коммерческое использование и не создают
+обязательств по поддержке, гарантиям или дальнейшей разработке.
+Приложение предоставляется «как есть» и «по мере доступности» на полных условиях
+из index.html. Бесплатность не передаёт авторские права и не предоставляет общего
+разрешения на распространение или изменение лицензии моего собственного кода
+и материалов.
+
+Эти положения относятся только к моему собственному коду и материалам. Они не
+заменяют лицензии сторонних компонентов и не ограничивают права, предоставленные
+их правообладателями. Уведомления и тексты лицензий включены в
+THIRD-PARTY-NOTICES.txt. Права, способы защиты и ответственность, которые нельзя
+исключить или ограничить по закону, сохраняются и имеют приоритет перед
+противоречащими им положениями.
