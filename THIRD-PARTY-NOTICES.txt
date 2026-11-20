@@ -4306,7 +4306,7 @@ Unmodified ESM runtime and codepage tables.
 JSDoc legacy Word writer, Alpaq92
 Revision: 821695a884e0c0bb8592a635d9524bb3e116cd67
 Source: https://github.com/Alpaq92/JSDoc
-Upstream writer source and structural blank-document skeleton unmodified.
+The structural blank-document skeleton is unmodified. Writer adaptations by Lonskiy Yegor are listed below.
 
 Zero-Clause BSD (0BSD)
 
@@ -4580,7 +4580,8 @@ SOFTWARE.
 
 
 LOCAL DOC WRITER MODIFICATION
-Lonskiy Yegor added the mandatory final paragraph for DOC files with secondary subdocuments. Original source: Alpaq92/JSDoc commit 821695a884e0c0bb8592a635d9524bb3e116cd67, licensed under 0BSD.
+The native DOC writer records inserted and deleted runs with their review authors and timestamps.
+Lonskiy Yegor added final paragraphs in secondary subdocuments, section tables, native list definitions, paragraph properties, table cell boundary recovery, distinct OfficeArt picture identifiers, internal hyperlinks, nested table records, live document fields and tracked text and formatting changes. Original source: Alpaq92/JSDoc commit 821695a884e0c0bb8592a635d9524bb3e116cd67, licensed under 0BSD.
 
 
 tesseract.js 6.0.1
@@ -6498,6 +6499,9 @@ the FAQ for more information on the distribution of modified source versions.
 
 
 OCR language model data (English, Russian, German, French, Spanish and Ukrainian), naptha/tessdata
+OCR language model data (Finnish, Swedish, Norwegian and Danish), Tesseract tessdata_fast
+https://github.com/tesseract-ocr/tessdata_fast/tree/87416418657359cb625c412a48b6e1d6d41c29bd
+The following Apache 2.0 license applies to both sets of language data.
                                  Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
@@ -7329,11 +7333,35 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+APPLICATION MODIFICATION NOTICE
+The reamkit 1.35.0 document layout code was modified by Lonskiy Yegor to preserve standalone column breaks and individual page-field number masks when rendering Word documents to PDF. Its original license and copyright notices are retained.
+
+The legacy Word reader preserves line-feed breaks and native interline spacing when importing DOC files.
+The reamkit Word reader preserves start and end paragraph alignment when exporting cells and body text to PDF.
+The layout engine preserves manual line breaks split across adjacent Word text runs.
+The local reamkit and legacy Word adapters preserve signed character offsets for inline pictures. The DOC reader retains inline picture positions, explicit RGB text colours and indexed text colours. The legacy writer also keeps paragraph formatting in headers and footers.
+
+SheetJS 0.20.3 was modified by Lonskiy Yegor to translate OpenFormula references and punctuation without modifying string literals, decode OpenDocument sheet names, read boolean month-format attributes, and write column outline levels using the standard worksheet attribute. Its original license and copyright notices are retained.
+
+Additional reamkit 1.35.0 modifications by Lonskiy Yegor preserve hidden character properties in DOCX and DOC, exclude hidden runs from print layout, and expose the existing style resolver to the application adapters.
+
+The reamkit 1.35.0 TrueType parser was modified by Lonskiy Yegor to read format 6 character maps with Unicode and Mac Roman encodings.
+
+The reamkit 1.35.0 PDF layout was modified by Lonskiy Yegor to report visible characters missing from its selected font after fallback.
+
+The reamkit 1.35.0 PDF writer was modified by Lonskiy Yegor to measure, subset and display Arabic and Devanagari glyphs using the same HarfBuzz shaping.
+
+The table PDF layout was also modified by Lonskiy Yegor to account for Word cell margins in row heights, apply nested-table horizontal offsets and consume preceding paragraph spacing before drawing nested tables.
+
+The reamkit 1.35.0 presentation reader was modified by Lonskiy Yegor to pass through source slide object IDs for conversion of animation and media targets.
+
+The reamkit 1.35.0 worksheet reader was modified by Lonskiy Yegor to retain hidden columns whose width is omitted.
+
 
 IWORK WEBASSEMBLY EXPORT COMPONENT
 Upstream iwork 0.4.0, MIT, Copyright (c) 2026 Zebra Pig.
 Source: https://github.com/zebra-pig/iwork-rs
-Modified by Lonskiy Yegor: browser random-byte import, in-memory package access, custom deck dimensions.
+Modified by Lonskiy Yegor: browser random-byte import, in-memory package access, custom deck dimensions, and hidden row and column state for Numbers export.
 The application adapter is original application code.
 
 
@@ -19161,8 +19189,18 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
+The unmodified HarfBuzz WebAssembly font shaper is supplied by harfbuzzjs 1.6.4. HarfBuzz, its USE data and harfbuzzjs notices are in licenses/HarfBuzz-COPYING.txt, licenses/HarfBuzz-USE-COPYING.txt and licenses/harfbuzzjs-LICENSE.txt.
+
+The HarfBuzz binary was built with Emscripten 4.0.13. Original toolchain and runtime notices are included in the Emscripten license files.
+
+Noto Sans Arabic 2.013 and Noto Sans Devanagari 2.007 are supplied as unmodified TrueType fonts, copyright the Noto Project Authors. SIL Open Font License 1.1 and copyright notices are in licenses/NotoSansArabic-OFL.txt and licenses/NotoSansDevanagari-OFL.txt.
+
+PDF conversion uses the OpenDoc PDF importer and DOCX writer under Apache-2.0. Full dependency, bundled-font and standard-data notices are in licenses/pdf-conversion.txt. Caladea and Carlito font files are unmodified; their notices are included there.
+
 Rust 1.99.1 standard library and compiler support: full component licenses and copyrights are included in licenses/rust-library-copyright.html.
 
 
 APPLICATION MODIFICATION NOTICE
 The JavaScript binding glue shipped with @lipoe/browser-qpdf 0.3.1 was modified by Lonskiy Yegor to replace runtime Function construction with static Embind adapters compatible with browser extension Content Security Policy. The qpdf WebAssembly binary is unchanged. The upstream Apache-2.0 license and notices continue to apply.
+
+The reamkit PDF writer was modified by Lonskiy Yegor to retain a selectable space between a list marker and its label.
